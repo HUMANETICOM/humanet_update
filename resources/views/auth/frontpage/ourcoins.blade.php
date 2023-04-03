@@ -1,0 +1,1 @@
+@extends('auth.navbar.layouts')
