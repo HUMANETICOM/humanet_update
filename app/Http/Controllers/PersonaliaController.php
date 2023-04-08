@@ -10,4 +10,9 @@ class PersonaliaController extends Controller
     {
         return view('auth.personalia.personalia');
     }
+
+    public function store(Request $request)
+    {
+        dd($request ->all);
+    }
 }

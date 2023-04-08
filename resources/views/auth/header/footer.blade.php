@@ -1,7 +1,6 @@
 
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
-
     <div class="container-fluid" style="background-color: #101c36">
         <div class="row mx-auto" style="width:70%; color: #fff">
             <div class="col-md-4 mt-5 mb-4 mb-md-0">
@@ -45,7 +44,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row justify-content-center text-center">
             <div class="col-md-7 mb-5" style="color: #fff; background-color=#101c36">
                 <p class="copyright">&copy; Copyright Humanet. All Rights Reserved</p>

@@ -1,6 +1,4 @@
 
-
-        @section('content')
         <section style="margin-bottom:10%;">
         @extends('auth.navbar.layouts')
         </section>
@@ -109,5 +107,3 @@
     </div>
 </section>
 </div>
-    
-@endsection

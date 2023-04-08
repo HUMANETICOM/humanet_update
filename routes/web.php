@@ -47,4 +47,6 @@ Route::controller(HeaderFooterController::class)->group(function() {
 
 Route::controller(PersonaliaController::class)->group(function() {
     Route::get('/personalia', 'personalia')->name('personalia');
+    Route::post('/store', 'store')->name('store');
 });
+

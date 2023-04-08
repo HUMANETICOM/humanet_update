@@ -1,13 +1,9 @@
-<section style="margin-bottom:10%;">
+
 @extends('auth.navbar.layouts')
-</section>
 
-
-@section('content')
 
 <div class="row justify-content-center mt-5">
-    <div class="col-md-8">
-
+    <div class="col-md-5 position-sticky" style="margin-top:20%">
         <div class="card">
             <div class="card-header">Login</div>
             <div class="card-body">
@@ -34,12 +30,8 @@
                     <div class="mb-3 row">
                         <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Login">
                     </div>
-                    
                 </form>
             </div>
         </div>
     </div>    
 </div>
-
-    
-@endsection

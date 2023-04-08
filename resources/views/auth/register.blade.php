@@ -1,10 +1,9 @@
-@section('content')
-<section style="margin-bottom:15%;">
+<section>
     @extends('auth.navbar.layouts')
 </section>
 <section>
-
     <div class="row justify-content-center mt-5">
+        <div class="col-md-12" style="height:200px"></div>
         <div class="col-md-12">
             <div class="row">
                 <div class="d-flex justify-content-center">
@@ -237,4 +236,4 @@
         </div>
     </div>
 </section>
-@endsection
+

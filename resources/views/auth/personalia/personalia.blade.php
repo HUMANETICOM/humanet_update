@@ -42,11 +42,11 @@
             </div>
 
             <div class="col-md-9 mb-5 mb-md-0" order-2 data-aos="fade-up">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="{{route('personalia')}}" method="POST" role="form" enctype="multipart/form-data">
+                    @csrf
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active mt-3" id="partA" role="tabpanel"
                             aria-labelledby="partA-tab">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                                 <div class="row">
                                     <div class="col-md-12 bg-primary p-3 mt-4">
                                         <h2 class=" text-center" style="color white;">PERSONALIA FORM</h2>
@@ -279,30 +279,7 @@
                                         <input type="file" class="form-control" id="customFile" />
                                         <br>
                                     </div>
-
-                                    <!-- Tab List -->
-                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item col-4" role="presentation">
-                                            <button class="nav-link active w-100" id="primary-tab" data-bs-toggle="tab"
-                                                data-bs-target="#primary" type="button" role="tab"
-                                                aria-controls="primary" aria-selected="true">Primary Residence
-                                                Address</button>
-                                        </li>
-                                        <li class="nav-item col-4" role="presentation">
-                                            <button class="nav-link w-100" id="secondary-tab" data-bs-toggle="tab"
-                                                data-bs-target="#secondary" type="button" role="tab"
-                                                aria-controls="secondary" aria-selected="false">Secondary Residence
-                                                Address</button>
-                                        </li>
-                                        <li class="nav-item col-4" role="presentation">
-                                            <button class="nav-link w-100" id="employment-tab" data-bs-toggle="tab"
-                                                data-bs-target="#employment" type="button" role="tab"
-                                                aria-controls="employment" aria-selected="false">Employment
-                                                Address</button>
-                                        </li>
-                                    </ul>
                                 </div>
-                                <div class="tab-pane fade mt-3 active" id="primary" role="tabpanel" aria-labelledby="primary-tab">
                                         <h4 class="d-flex justify-content-start">Primary Residence Address</h4>
                                         <div class="row">
                                         <div class="col-md-4 form-group mt-3 mt-md-0">
@@ -499,7 +476,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade mt-3 active" id="secondary" role="tabpanel" aria-labelledby="secondary-tab">
                                 <h4 class="d-flex justify-content-start">Secondary Residence Address</h4>
                                     <div class="row">
                                     <div class="col-md-2 form-group mt-3 mt-md-0">
@@ -691,7 +667,7 @@
                                         </div>
                                     </div>
                             	</div>
-                            </form>
+
                         </div>
                     </div>
 
