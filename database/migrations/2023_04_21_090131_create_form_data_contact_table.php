@@ -11,9 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('image', function (Blueprint $table) {
+        Schema::create('form_data_contact', function (Blueprint $table) {
             $table->id();
-            $table->string('Img');
+            $table->string('fn');
+            $table->string('ln');
+            $table->text('pa');
+            $table->string('province');
+            $table->string('cor');
+            $table->text('relationship');
+            $table->string('iepn');
+            $table->string('ieea');
             $table->timestamps();
         });
     }
@@ -23,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('image');
+        Schema::dropIfExists('form_data_contact');
     }
 };

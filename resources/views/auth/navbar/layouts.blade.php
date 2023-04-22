@@ -54,21 +54,21 @@
                         @guest
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('aboutus')) ? 'active' : '' }}"
-                                href="{{ route('aboutus') }}">About</a>
+                                href="{{ route('aboutus') }}" style="color: #fff">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('humaehealth')) ? 'active' : '' }}"
-                                href="{{ route('humaehealth') }}">HumaeHealthpass</a>
+                                href="{{ route('humaehealth') }}" style="color: #fff">HumaeHealthpass</a>
                         </li>
                         <li class="nav-item">
                             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff">
                                             Sign-Up
                                         </a>
-                                        <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
                                             <a class="nav-link {{ (request()->is('register')) ? 'active' : '' }} "
                                                 href="{{ route('register') }}">Signup User</a>
                                             <a class="nav-link {{ (request()->is('signup')) ? 'active' : '' }}"
@@ -80,17 +80,17 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}"
-                                href="{{ route('login') }}">Login</a>
+                                href="{{ route('login') }}" style="color: #fff">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ (request()->is('pricing')) ? 'active' : '' }}"
-                                href="{{ route('pricing') }}">Pricing</a>
+                                href="{{ route('pricing') }}" style="color: #fff">Pricing</a>
                         </li>
                         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff">
                                         Language<i class="bi bi-chevron-down"></i>
                                     </a>
                                     <ul class="dropdown-menu text-start" aria-labelledby="navbarDarkDropdownMenuLink">

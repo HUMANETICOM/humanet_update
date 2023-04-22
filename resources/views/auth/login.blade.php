@@ -1,9 +1,10 @@
 
-@extends('auth.navbar.layouts')
-
+ <section style="height: 200px; position: relative"> 
+        @extends('auth.navbar.layouts')
+</section>
 
 <div class="row justify-content-center mt-5">
-    <div class="col-md-5 position-sticky" style="margin-top:20%">
+    <div class="col-md-5 position-sticky">
         <div class="card">
             <div class="card-header">Login</div>
             <div class="card-body">

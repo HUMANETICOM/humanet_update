@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\frontend;
 use App\Http\Controllers\HeaderFooterController;
+use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\PersonaliaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
@@ -45,8 +46,21 @@ Route::controller(HeaderFooterController::class)->group(function() {
 
 });
 
-Route::controller(PersonaliaController::class)->group(function() {
+Route::controller(PersonaliaController::class)->group(function() { 
     Route::get('/personalia', 'personalia')->name('personalia');
-    Route::post('/store', 'store')->name('store');
+    Route::get('/personalia/contact', 'contact')->name('contact');
+    Route::get('/personalia/id', 'id')->name('id');
+    Route::get('/personalia/insurance', 'insurance')->name('insurance');
+    Route::get('/personalia/bmc', 'bmc')->name('bmc');
+    Route::get('/personalia/start-medica-info', 'smi')->name('smi');
+    Route::post('/personaliastorage', 'personaliastorage')->name('personaliastorage');
 });
+
+Route::controller(MedicalController::class)->group(function(){
+    Route::get('/medical','medical')->name('medical');
+});
+
+Route::post('/personalia', [PersonaliaController::class, 'submitForm'])->name('form.submit');
+Route::post('/personalia/id', [PersonaliaController::class, 'submitFormContact'])->name('form.submit.contact');
+
 
